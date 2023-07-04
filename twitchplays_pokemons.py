@@ -79,77 +79,79 @@ def handle_message(message):
         # Example GTA V Code 
         ###################################
 
-           if msg == "up": 
+        if msg == "up" or "^": 
             j.set_button(1,1)
             time.sleep(.2)
             j.set_button(1,0)
             print("We go " + "up")
 
-        if msg == "longup": 
-            j.set_button(1,1)
-            time.sleep(.8)
-            j.set_button(1,0)
-            print("We go " + "longup")
-
-        if msg == "down": 
+        if msg == "down" or "v": 
             j.set_button(2,1)
             time.sleep(.2)
             j.set_button(2,0)
             print("We go " + "down")
 
-        if msg == "longdown": 
+        if msg == "left" or "<": 
+            j.set_button(2,1)
+            time.sleep(.2)
+            j.set_button(2,0)
+            print("We go " + "left")
+
+        if msg == "right" or ">": 
+            j.set_button(2,1)
+            time.sleep(.2)
+            j.set_button(2,0)
+            print("We go " + "right")
+
+        if msg == "longup" or "^^": 
+            j.set_button(1,1)
+            time.sleep(.8)
+            j.set_button(1,0)
+            print("We go " + "up")
+
+        if msg == "longdown" or "vv": 
             j.set_button(2,1)
             time.sleep(.8)
             j.set_button(2,0)
-            print("We go " + "longdown")
+            print("We go " + "down")
 
-        if msg == "left" or: 
-            j.set_button(3,1)
-            time.sleep(.2)
-            j.set_button(3,0)
+        if msg == "longleft" or "<<": 
+            j.set_button(2,1)
+            time.sleep(.8)
+            j.set_button(2,0)
             print("We go " + "left")
 
-        if msg == "longleft": 
-            j.set_button(3,1)
+        if msg == "longright" or ">>": 
+            j.set_button(2,1)
             time.sleep(.8)
-            j.set_button(3,0)
-            print("We go " + "longleft")
-
-        if msg == "right": 
-            j.set_button(4,1)
-            time.sleep(.2)
-            j.set_button(4,0)
+            j.set_button(2,0)
             print("We go " + "right")
 
-        if msg == "longright": 
-            j.set_button(4,1)
-            time.sleep(.8)
-            j.set_button(4,0)
-            print("We go " + "longright")
-
         if msg == "a": 
-            j.set_button(5,1)
+            j.set_button(2,1)
             time.sleep(.2)
-            j.set_button(5,0)
+            j.set_button(2,0)
             print("We go " + "a")
 
         if msg == "b": 
-            j.set_button(6,1)
+            j.set_button(2,1)
             time.sleep(.2)
-            j.set_button(6,0)
+            j.set_button(2,0)
             print("We go " + "b")
 
-        if msg == "start": 
-            j.set_button(7,1)
+        if msg == "select": 
+            j.set_button(2,1)
             time.sleep(.2)
-            j.set_button(7,0)
+            j.set_button(2,0)
+            print("We go " + "select")
+
+        if msg == "start": 
+            j.set_button(2,1)
+            time.sleep(.2)
+            j.set_button(2,0)
             print("We go " + "start")
 
-        if msg == "select": 
-            j.set_button(8,1)
-            time.sleep(.2)
-            j.set_button(8,0)
-            print("We go " + "select")
+
 
         ####################################
         ####################################
@@ -194,3 +196,4 @@ while True:
                 active_tasks.append(thread_pool.submit(handle_message, message))
             else:
                 print(f'WARNING: active tasks ({len(active_tasks)}) exceeds number of workers ({MAX_WORKERS}). ({len(message_queue)} messages in the queue)')
+ 
