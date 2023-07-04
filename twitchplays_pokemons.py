@@ -79,53 +79,101 @@ def handle_message(message):
         # Example GTA V Code 
         ###################################
 
-        if msg == "up" or "^": 
+        if msg == "up": 
             j.set_button(1,1)
             time.sleep(.2)
             j.set_button(1,0)
             print("We go " + "up")
 
-        if msg == "down" or "v": 
+        if msg == "down": 
             j.set_button(2,1)
             time.sleep(.2)
             j.set_button(2,0)
             print("We go " + "down")
 
-        if msg == "left" or "<": 
+        if msg == "left": 
             j.set_button(2,1)
             time.sleep(.2)
             j.set_button(2,0)
             print("We go " + "left")
 
-        if msg == "right" or ">": 
+        if msg == "right": 
             j.set_button(2,1)
             time.sleep(.2)
             j.set_button(2,0)
             print("We go " + "right")
 
-        if msg == "longup" or "^^": 
+        if msg == "longup": 
             j.set_button(1,1)
             time.sleep(.8)
             j.set_button(1,0)
-            print("We go " + "up")
+            print("We go " + "upper")
 
-        if msg == "longdown" or "vv": 
+        if msg == "longdown": 
             j.set_button(2,1)
             time.sleep(.8)
+            j.set_button(2,0)
+            print("We go " + "downer")
+
+        if msg == "longleft": 
+            j.set_button(2,1)
+            time.sleep(.8)
+            j.set_button(2,0)
+            print("We go " + "lefter")
+
+        if msg == "longright": 
+            j.set_button(2,1)
+            time.sleep(.8)
+            j.set_button(2,0)
+            print("We go " + "righter")
+
+        if msg == "^": 
+            j.set_button(1,1)
+            time.sleep(.2)
+            j.set_button(1,0)
+            print("We go " + "up")
+
+        if msg == "v": 
+            j.set_button(2,1)
+            time.sleep(.2)
             j.set_button(2,0)
             print("We go " + "down")
 
-        if msg == "longleft" or "<<": 
+        if msg == "<": 
             j.set_button(2,1)
-            time.sleep(.8)
+            time.sleep(.2)
             j.set_button(2,0)
             print("We go " + "left")
 
-        if msg == "longright" or ">>": 
+        if msg == ">": 
+            j.set_button(2,1)
+            time.sleep(.2)
+            j.set_button(2,0)
+            print("We go " + "right")
+
+        if msg == "^^": 
+            j.set_button(1,1)
+            time.sleep(.8)
+            j.set_button(1,0)
+            print("We go " + "upper")
+
+        if msg == "vv": 
             j.set_button(2,1)
             time.sleep(.8)
             j.set_button(2,0)
-            print("We go " + "right")
+            print("We go " + "downer")
+
+        if msg == "<<": 
+            j.set_button(2,1)
+            time.sleep(.8)
+            j.set_button(2,0)
+            print("We go " + "lefter")
+
+        if msg == ">>": 
+            j.set_button(2,1)
+            time.sleep(.8)
+            j.set_button(2,0)
+            print("We go " + "righter")
 
         if msg == "a": 
             j.set_button(2,1)
