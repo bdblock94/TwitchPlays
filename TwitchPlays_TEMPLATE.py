@@ -120,6 +120,13 @@ def handle_message(message):
         if msg == "aim right":
             pydirectinput.moveRel(200, 0, relative=True)
 
+        # vjoy emulation example !!MUST HAVE vjoy INSTALLED ON PC AND pyvjoy installed using pip!!
+        if msg == "start": 
+            j.set_button(2,1)
+            time.sleep(.2)
+            j.set_button(2,0)
+            print("We go " + "start")
+
         ####################################
         ####################################
 
