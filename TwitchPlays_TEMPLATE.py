@@ -3,13 +3,14 @@ import random
 import keyboard
 import pydirectinput
 import pyautogui
+import pyvjoy
 import TwitchPlays_Connection
 from TwitchPlays_KeyCodes import *
 
 ##################### GAME VARIABLES #####################
 
 # Replace this with your Twitch username. Must be all lowercase.
-TWITCH_CHANNEL = 'dougdougw' 
+TWITCH_CHANNEL = 'viridiansbot' 
 
 # If streaming on Youtube, set this to False
 STREAMING_ON_TWITCH = True
@@ -34,8 +35,10 @@ MESSAGE_RATE = 0.5
 # e.g. if you get a batch of 50 messages, you can choose to only process the first 10 of them and ignore the others.
 # This is helpful for games where too many inputs at once can actually hinder the gameplay.
 # Setting to ~50 is good for total chaos, ~5-10 is good for 2D platformers
-MAX_QUEUE_LENGTH = 20
+MAX_QUEUE_LENGTH = 50
 MAX_WORKERS = 100 # Maximum number of threads you can process at a time 
+
+j = pyvjoy.VJoyDevice(1)
 
 last_time = time.time()
 message_queue = []
