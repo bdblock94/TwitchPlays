@@ -9,6 +9,7 @@ from TwitchPlays_KeyCodes import *
 
 ##################### GAME VARIABLES #####################
 
+
 # Replace this with your Twitch username. Must be all lowercase.
 TWITCH_CHANNEL = 'viridiansbot' 
 
