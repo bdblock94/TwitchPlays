@@ -73,3 +73,15 @@ for ltr in smallify:
         continue
 
 pyperclip.copy(now_small)
+
+
+#Compact version from reddit
+
+#import pyperclip
+
+#smallify = pyperclip.paste()
+
+#now_small = smallify.translate({97 + i: c for i, c in enumerate("ᵃᵇᶜᵈᵉᶠᵍʰᶦʲᵏˡᵐⁿᵒᵖᵠʳˢᵗᵘᵛʷˣʸᶻ")})
+
+#pyperclip.copy(now_small)
+#print(now_small)
