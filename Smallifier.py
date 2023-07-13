@@ -71,6 +71,26 @@ for ltr in smallify.lower():
         now_small += ','
     elif ltr == '.':
         now_small += '.'
+    elif ltr == '0':
+        now_small += '⁰'
+    elif ltr == '1':
+        now_small += '¹'
+    elif ltr == '2':
+        now_small += '²'
+    elif ltr == '3':
+        now_small += '³'
+    elif ltr == '4':
+        now_small += '⁴'
+    elif ltr == "5":
+        now_small += '⁵'
+    elif ltr == "6":
+        now_small += '⁶'
+    elif ltr == "7":
+        now_small += '⁷'
+    elif ltr == "8":
+        now_small += "⁸"
+    elif ltr == "9":
+        now_small += '⁹'
     else:
         continue
 
