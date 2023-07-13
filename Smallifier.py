@@ -24,7 +24,7 @@ for ltr in smallify.lower():
     elif ltr == 'h':
         now_small += 'ʰ'
     elif ltr == 'i':
-        now_small += 'ᶦ'
+        now_small += 'ᶤ'
     elif ltr == 'j':
         now_small += 'ʲ'
     elif ltr == 'k':
@@ -40,7 +40,7 @@ for ltr in smallify.lower():
     elif ltr == 'p':
         now_small += 'ᵖ'
     elif ltr == 'q':
-        now_small += 'ᵠ'
+        now_small += 'ᵟ'
     elif ltr == 'r':
         now_small += 'ʳ'
     elif ltr == 's':
