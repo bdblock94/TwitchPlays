@@ -59,7 +59,7 @@ for ltr in smallify.lower():
         now_small += 'ʸ'
     elif ltr == 'z':
         now_small += 'ᶻ'
-    elif ltr == ".":
+    elif ltr == "!":
         now_small += '!'
     elif ltr == "?":
         now_small += '?'
@@ -69,6 +69,8 @@ for ltr in smallify.lower():
         now_small += "'"
     elif ltr == ",":
         now_small += ','
+    elif ltr == '.':
+        now_small += '.'
     else:
         continue
 
