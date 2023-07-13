@@ -6,7 +6,7 @@ smallify = pyperclip.paste()
 #ᵃᵇᶜᵈᵉᶠᵍʰᶦʲᵏˡᵐⁿᵒᵖᵠʳˢᵗᵘᵛʷˣʸᶻ
 
 now_small = ""
-for ltr in smallify:
+for ltr in smallify.lower():
     if ltr == 'a':
         now_small += 'ᵃ'
     elif ltr == 'b':
@@ -73,6 +73,7 @@ for ltr in smallify:
         continue
 
 pyperclip.copy(now_small)
+print(now_small)
 
 
 #Compact version from reddit
@@ -80,6 +81,8 @@ pyperclip.copy(now_small)
 #import pyperclip
 
 #smallify = pyperclip.paste()
+
+#smallify = smallify.lower()
 
 #now_small = smallify.translate({97 + i: c for i, c in enumerate("ᵃᵇᶜᵈᵉᶠᵍʰᶦʲᵏˡᵐⁿᵒᵖᵠʳˢᵗᵘᵛʷˣʸᶻ")})
 
