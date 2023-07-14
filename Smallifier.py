@@ -1,5 +1,5 @@
 import pyperclip
-
+import keyboard
 
 smallify = pyperclip.paste()
 
@@ -95,7 +95,7 @@ for ltr in smallify.lower():
         continue
 
 pyperclip.copy(now_small)
-print(now_small)
+keyboard.press_and_release('ctrl+v')
 
 
 #Compact version from reddit
