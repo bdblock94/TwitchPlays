@@ -92,15 +92,15 @@ def handle_message(message):
             print("We go " + "down")
 
         if msg == "left": 
-            j.set_button(2,1)
+            j.set_button(3,1)
             time.sleep(.2)
-            j.set_button(2,0)
+            j.set_button(3,0)
             print("We go " + "left")
 
         if msg == "right": 
-            j.set_button(2,1)
+            j.set_button(4,1)
             time.sleep(.2)
-            j.set_button(2,0)
+            j.set_button(4,0)
             print("We go " + "right")
 
         if msg == "longup": 
@@ -116,15 +116,15 @@ def handle_message(message):
             print("We go " + "downer")
 
         if msg == "longleft": 
-            j.set_button(2,1)
+            j.set_button(3,1)
             time.sleep(.8)
-            j.set_button(2,0)
+            j.set_button(3,0)
             print("We go " + "lefter")
 
         if msg == "longright": 
-            j.set_button(2,1)
+            j.set_button(4,1)
             time.sleep(.8)
-            j.set_button(2,0)
+            j.set_button(4,0)
             print("We go " + "righter")
 
         if msg == "^": 
@@ -140,15 +140,15 @@ def handle_message(message):
             print("We go " + "down")
 
         if msg == "<": 
-            j.set_button(2,1)
+            j.set_button(3,1)
             time.sleep(.2)
-            j.set_button(2,0)
+            j.set_button(3,0)
             print("We go " + "left")
 
         if msg == ">": 
-            j.set_button(2,1)
+            j.set_button(4,1)
             time.sleep(.2)
-            j.set_button(2,0)
+            j.set_button(4,0)
             print("We go " + "right")
 
         if msg == "^^": 
@@ -164,39 +164,39 @@ def handle_message(message):
             print("We go " + "downer")
 
         if msg == "<<": 
-            j.set_button(2,1)
+            j.set_button(3,1)
             time.sleep(.8)
-            j.set_button(2,0)
+            j.set_button(3,0)
             print("We go " + "lefter")
 
         if msg == ">>": 
-            j.set_button(2,1)
+            j.set_button(4,1)
             time.sleep(.8)
-            j.set_button(2,0)
+            j.set_button(4,0)
             print("We go " + "righter")
 
         if msg == "a": 
-            j.set_button(2,1)
+            j.set_button(5,1)
             time.sleep(.2)
-            j.set_button(2,0)
+            j.set_button(5,0)
             print("We go " + "a")
 
         if msg == "b": 
-            j.set_button(2,1)
+            j.set_button(6,1)
             time.sleep(.2)
-            j.set_button(2,0)
+            j.set_button(6,0)
             print("We go " + "b")
 
         if msg == "select": 
-            j.set_button(2,1)
+            j.set_button(7,1)
             time.sleep(.2)
-            j.set_button(2,0)
+            j.set_button(7,0)
             print("We go " + "select")
 
         if msg == "start": 
-            j.set_button(2,1)
+            j.set_button(8,1)
             time.sleep(.2)
-            j.set_button(2,0)
+            j.set_button(8,0)
             print("We go " + "start")
 
 
