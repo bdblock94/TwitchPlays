@@ -79,49 +79,49 @@ def handle_message(message):
         # Example GTA V Code 
         ###################################
 
-        if msg == "up": 
+        if msg == "UP" or msg =="w": 
             j.set_button(1,1)
             time.sleep(.2)
             j.set_button(1,0)
             print("We go " + "up")
 
-        if msg == "down": 
+        if msg == "down" or msg =="s": 
             j.set_button(2,1)
             time.sleep(.2)
             j.set_button(2,0)
             print("We go " + "down")
 
-        if msg == "left": 
+        if msg == "left" or msg =="a": 
             j.set_button(3,1)
             time.sleep(.2)
             j.set_button(3,0)
             print("We go " + "left")
 
-        if msg == "right": 
+        if msg == "right" or msg =="d": 
             j.set_button(4,1)
             time.sleep(.2)
             j.set_button(4,0)
             print("We go " + "right")
 
-        if msg == "longup": 
+        if msg == "longup" or msg =="lw": 
             j.set_button(1,1)
             time.sleep(.8)
             j.set_button(1,0)
             print("We go " + "upper")
 
-        if msg == "longdown": 
+        if msg == "longdown" or msg =="ls": 
             j.set_button(2,1)
             time.sleep(.8)
             j.set_button(2,0)
             print("We go " + "downer")
 
-        if msg == "longleft": 
+        if msg == "longleft" or msg =="la": 
             j.set_button(3,1)
             time.sleep(.8)
             j.set_button(3,0)
             print("We go " + "lefter")
 
-        if msg == "longright": 
+        if msg == "longright" or msg =="ld": 
             j.set_button(4,1)
             time.sleep(.8)
             j.set_button(4,0)
