@@ -5,6 +5,8 @@ import pydirectinput
 import pyautogui
 import pyvjoy
 import TwitchPlays_Connection
+import pyautogui as pag
+import pygetwindow as gw
 from TwitchPlays_KeyCodes import *
 
 ##################### GAME VARIABLES #####################
@@ -39,12 +41,14 @@ MAX_QUEUE_LENGTH = 50
 MAX_WORKERS = 100 # Maximum number of threads you can process at a time 
 
 j = pyvjoy.VJoyDevice(1)
+j2 = pyvjoy.VJoyDevice(2)
 
 last_time = time.time()
 message_queue = []
 thread_pool = concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS)
 active_tasks = []
 pyautogui.FAILSAFE = False
+WINDOW_NAME = "Gameboy Advance - Pokemon - Firered Version (USA, Europe) (Rev 1)"
 ##########################################################
 
 # Count down before starting, so you have time to load up the game
@@ -199,13 +203,11 @@ def handle_message(message):
             print("We go " + "start")
         
         if msg == "save":
-            import pygetwindow as gw  
-            win = gw.getWindowsWithTitle('Gameboy Advance - Pokemon - Firered Version (USA, Europe) (Rev 1)')[0] 
-            win.activate()
-            time.sleep(1)
-            HoldAndReleaseKey(NUMPAD_0, 2)
-            HoldAndReleaseKey(LEFT_CONTROL, 2)
-            
+           if username == 'angrydemonnoises' or username == 'viridianwave' or username == 'amoop15' or username == 'krazykillzone' or username == 'beri':
+                j2.set_button(1,1)
+                time.sleep(.2)
+                j2.set_button(1,0)
+                print("We save")
 
 
         ####################################
