@@ -5,7 +5,6 @@ import pydirectinput
 import pyautogui
 import pyvjoy
 import TwitchPlays_Connection
-import pygetwindow as gw
 from TwitchPlays_KeyCodes import *
 
 ##################### GAME VARIABLES #####################
@@ -46,7 +45,6 @@ message_queue = []
 thread_pool = concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS)
 active_tasks = []
 pyautogui.FAILSAFE = False
-win = gw.getWindowsWithTitle('Gameboy Advance - Pokemon - Firered Version (USA, Europe) (Rev 1)')[0]
 ##########################################################
 
 # Count down before starting, so you have time to load up the game
@@ -201,7 +199,10 @@ def handle_message(message):
             print("We go " + "start")
         
         if msg == "save":
+            import pygetwindow as gw  
+            win = gw.getWindowsWithTitle('Gameboy Advance - Pokemon - Firered Version (USA, Europe) (Rev 1)')[0] 
             win.activate()
+            time.sleep(1)
             HoldAndReleaseKey(NUMPAD_0, 2)
             HoldAndReleaseKey(LEFT_CONTROL, 2)
             
