@@ -79,49 +79,49 @@ def handle_message(message):
         # Example GTA V Code 
         ###################################
 
-        if msg == "UP" or msg =="w": 
+        if msg == "UP" or msg =="u": 
             j.set_button(1,1)
             time.sleep(.2)
             j.set_button(1,0)
             print("We go " + "up")
 
-        if msg == "down" or msg =="s": 
+        if msg == "down" or msg =="d": 
             j.set_button(2,1)
             time.sleep(.2)
             j.set_button(2,0)
             print("We go " + "down")
 
-        if msg == "left" or msg =="a": 
+        if msg == "left" or msg =="l": 
             j.set_button(3,1)
             time.sleep(.2)
             j.set_button(3,0)
             print("We go " + "left")
 
-        if msg == "right" or msg =="d": 
+        if msg == "right" or msg =="r": 
             j.set_button(4,1)
             time.sleep(.2)
             j.set_button(4,0)
             print("We go " + "right")
 
-        if msg == "longup" or msg =="lw": 
+        if msg == "longup" or msg =="lu": 
             j.set_button(1,1)
             time.sleep(.8)
             j.set_button(1,0)
             print("We go " + "upper")
 
-        if msg == "longdown" or msg =="ls": 
+        if msg == "longdown" or msg =="ld": 
             j.set_button(2,1)
             time.sleep(.8)
             j.set_button(2,0)
             print("We go " + "downer")
 
-        if msg == "longleft" or msg =="la": 
+        if msg == "longleft" or msg =="ll": 
             j.set_button(3,1)
             time.sleep(.8)
             j.set_button(3,0)
             print("We go " + "lefter")
 
-        if msg == "longright" or msg =="ld": 
+        if msg == "longright" or msg =="lr": 
             j.set_button(4,1)
             time.sleep(.8)
             j.set_button(4,0)
